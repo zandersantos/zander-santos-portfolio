@@ -39,3 +39,15 @@ body {
 .btn-primary:hover {
   background-color: #bebdbd;
 }
+
+.footer-link {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  color: #737373;
+  transition: color 300ms ease;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #171717;
+}
