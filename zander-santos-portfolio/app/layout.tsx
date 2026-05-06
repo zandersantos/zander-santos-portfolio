@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Zander Santos | Developer Portfolio",
@@ -15,9 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
         <Header/>
-        {children}
+          {children}
+        <div className="mt-auto">
+          <Footer />
+        </div>
       </body>
     </html>
 
