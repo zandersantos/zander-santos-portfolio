@@ -1,12 +1,12 @@
 const Header = () => {
   return (
-    <div>
-      <button>About</button>
-      <button>Experience</button>
-      <button>Education</button>
-      <button>Projects</button>
-      <button>Contact</button>
-    </div>
+    <nav className="flex justify-end gap-4 p-4">
+      <button className="btn-primary">About</button>
+      <button className="btn-primary">Experience</button>
+      <button className="btn-primary">Education</button>
+      <button className="btn-primary">Projects</button>
+      <button className="btn-primary">Contact</button>
+    </nav>
   )
 }
 
