@@ -5,7 +5,6 @@ const Header = () => {
       <button className="btn-primary">Experience</button>
       <button className="btn-primary">Education</button>
       <button className="btn-primary">Projects</button>
-      <button className="btn-primary">Contact</button>
     </nav>
   )
 }
