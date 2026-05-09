@@ -45,10 +45,9 @@ Built with Next.js and React, it highlights my projects, skills, and full-stack 
 
 ## Features
 
-- Landing / Home with brief intro and call-to-action — Done
+- Landing / Home with brief intro and call-to-action — In progress
 - Projects gallery with cards and detail pages — In progress
 - About / Experience / Education sections — In progress
-- Contact section (email / links / simple form) — Planned
 
 ---
 
