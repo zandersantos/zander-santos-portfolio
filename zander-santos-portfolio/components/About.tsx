@@ -22,7 +22,7 @@ const About = () => {
   ];
 
   return (
-    <section className="min-h-screen px-8 pt-32">
+    <section id="about" className="min-h-screen px-8 pt-20">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-md uppercase text-neutral-400 mb-4">About</h2>
 
