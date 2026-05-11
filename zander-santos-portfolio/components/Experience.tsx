@@ -1,7 +1,7 @@
 const Experience = () => {
 
   return (
-    <section className="min-h-screen px-8 pt-32">
+    <section id="experience" className="min-h-screen px-8 pt-20">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-md uppercase text-neutral-400 mb-10">
           Experience

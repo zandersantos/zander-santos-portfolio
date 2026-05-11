@@ -23,6 +23,10 @@ body {
   font-weight: 300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn-primary {
   padding: 0.5rem 1rem;
   background-color: transparent;
