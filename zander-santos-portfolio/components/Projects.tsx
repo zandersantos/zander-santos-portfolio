@@ -93,7 +93,7 @@ const Projects = () => {
         <div className="mt-16 border-l border-neutral-200 pl-6">
           <p className="text-xs uppercase text-neutral-400 mb-4">In Progress</p>
           <p className="text-sm text-neutral-600 font-light">
-            Currently building projects in C#/.NET, Next.js, and modern JavaScript
+            Currently building projects in JavaScript, React, Next.js, and C#/.NET
             to expand my portfolio with production-ready applications in my primary tech stack.
           </p>
         </div>
