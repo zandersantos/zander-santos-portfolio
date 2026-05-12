@@ -3,24 +3,33 @@
 :root {
   --background: #fafafa;
   --foreground: #171717;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at top left, rgba(37,99,235,0.08), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(96,165,250,0.08), transparent 35%),
+    var(--background);
+
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
+}
+
+body::before {
+  content:"";
+  position: fixed;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(15,23,42,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,23,42,0.04) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  z-index: -1;
 }
 
 html {
@@ -28,20 +37,40 @@ html {
 }
 
 .btn-primary {
-  padding: 0.5rem 1rem;
-  background-color: transparent;
-  color: #171717;
-  border: none;
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  padding: 0.7rem 0.9rem;
+  font-size: 1.0rem;
+  font-weight: 700;
   text-transform: uppercase;
-  transition: background-color 300ms ease;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
 }
 
 .btn-primary:hover {
-  background-color: #bebdbd;
+  transform: translateY(-4px);
+}
+
+.btn-primary:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: -4px;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(23, 23, 23, 0.7);
+
+  opacity: 0;
+
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
 }
 
 .footer-link {
