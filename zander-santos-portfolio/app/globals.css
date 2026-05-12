@@ -10,8 +10,8 @@
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(37,99,235,0.08), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(96,165,250,0.08), transparent 35%),
+    radial-gradient(circle at top left, rgba(44, 129, 255, 0.205), transparent 30%),
+    radial-gradient(circle at top right, rgba(250, 222, 96, 0.192), transparent 35%),
     var(--background);
 
   color: var(--foreground);
@@ -85,4 +85,38 @@ html {
 
 .footer-link:hover {
   border-color: #171717;
+}
+
+.scroll-down {
+  padding: 0.9rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  font-weight: 700;
+
+  border: 2px solid black;
+  border-radius: 9999px;
+
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
+}
+
+.scroll-down::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  top: 120%;
+
+  width: 1px;
+  height: 40px;
+
+  background: rgba(0, 0, 0, 0.49);
+}
+
+.scroll-down:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.9);
+
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
 }
