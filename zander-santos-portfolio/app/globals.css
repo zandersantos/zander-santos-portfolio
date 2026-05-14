@@ -95,6 +95,7 @@ html {
 
   border: 2px solid black;
   border-radius: 9999px;
+  background-color: white;
 
   transition:
     transform 200ms ease,
