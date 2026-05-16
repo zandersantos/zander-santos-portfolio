@@ -36,13 +36,13 @@ const About = () => {
 
             <p className="text-xl leading-relaxed text-neutral-600">
               I&apos;m a full-stack developer based in <span className="text-neutral-900 font-medium">Winnipeg </span> who&apos;s
-              passionate about building things that matter.
+              passionate about building digital experiences that genuinely help people and make everyday tasks easier.
             </p>
 
             <p className="text-lg leading-relaxed text-neutral-500">
-              I thrive on collaboration and communication, translating ideas into
-              solutions that work. I&apos;m constantly exploring emerging
-              technologies and asking &quot;what&apos;s possible?&quot;
+              I enjoy turning ideas into practical, user-focused solutions through thoughtful design and development.
+              Whether it&apos;s streamlining workflows, improving accessibility, or creating engaging experiences,
+              I like building technology that people can actively use and benefit from.
             </p>
 
             <div className="pt-6 border-t-2 border-blue-100">
@@ -51,7 +51,6 @@ const About = () => {
                 my knowledge and grow.
               </p>
             </div>
-
           </div>
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl px-8 py-6 text-white shadow-xl">
