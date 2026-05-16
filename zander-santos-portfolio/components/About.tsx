@@ -1,6 +1,7 @@
 const About = () => {
 
   const frontend = [
+    'JavaScript',
     'React',
     'Next.js',
     'TypeScript',
@@ -9,7 +10,7 @@ const About = () => {
   ];
 
   const backend = [
-    'PostgreSQL',
+    'SQL (PostgreSQL)',
     'C# / .NET',
     'Node.js',
   ];
@@ -18,7 +19,6 @@ const About = () => {
     'Git/GitHub',
     'Supabase',
     'AWS',
-    'DigitalOcean',
   ];
 
   return (
@@ -26,7 +26,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
-            <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-xs uppercase tracking-[0.2em] font-medium mb-6">
+            <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-md uppercase tracking-[0.2em] font-medium mb-6">
               About
             </span>
 
@@ -53,8 +53,8 @@ const About = () => {
             </div>
           </div>
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl px-8 py-6 text-white shadow-xl">
-              <h3 className="text-xs uppercase text-blue-200 tracking-[0.3em] mb-6">
+            <div className=" skill-card bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl px-8 py-6 text-white shadow-xl">
+              <h3 className="text-md uppercase text-blue-200 tracking-[0.3em] mb-6">
                 Frontend
               </h3>
               <div className="space-y-3">
@@ -68,8 +68,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
-              <h3 className="text-xs uppercase text-neutral-400 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-white rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
+              <h3 className="text-md uppercase text-neutral-400 tracking-[0.3em] mb-6">
                 Backend
               </h3>
               <div className="space-y-3">
@@ -83,8 +83,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-neutral-200 rounded-2xl px-8 py-6 shadow-lg">
-              <h3 className="text-xs uppercase text-neutral-500 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-neutral-200 rounded-2xl px-8 py-6 shadow-lg">
+              <h3 className="text-md uppercase text-neutral-500 tracking-[0.3em] mb-6">
                 Tools & Services
               </h3>
               <div className="space-y-3">
