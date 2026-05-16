@@ -121,3 +121,17 @@ html {
 
   box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
 }
+
+.skill-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.02);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    0 8px 16px rgba(37, 99, 235, 0.08);
+}

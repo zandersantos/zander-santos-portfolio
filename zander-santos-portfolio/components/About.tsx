@@ -1,6 +1,7 @@
 const About = () => {
 
   const frontend = [
+    'JavaScript',
     'React',
     'Next.js',
     'TypeScript',
@@ -9,7 +10,7 @@ const About = () => {
   ];
 
   const backend = [
-    'PostgreSQL',
+    'SQL (PostgreSQL)',
     'C# / .NET',
     'Node.js',
   ];
@@ -18,7 +19,6 @@ const About = () => {
     'Git/GitHub',
     'Supabase',
     'AWS',
-    'DigitalOcean',
   ];
 
   return (
@@ -26,7 +26,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
-            <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-xs uppercase tracking-[0.2em] font-medium mb-6">
+            <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-md uppercase tracking-[0.2em] font-medium mb-6">
               About
             </span>
 
@@ -36,13 +36,13 @@ const About = () => {
 
             <p className="text-xl leading-relaxed text-neutral-600">
               I&apos;m a full-stack developer based in <span className="text-neutral-900 font-medium">Winnipeg </span> who&apos;s
-              passionate about building things that matter.
+              passionate about building digital experiences that genuinely help people and make everyday tasks easier.
             </p>
 
             <p className="text-lg leading-relaxed text-neutral-500">
-              I thrive on collaboration and communication, translating ideas into
-              solutions that work. I&apos;m constantly exploring emerging
-              technologies and asking &quot;what&apos;s possible?&quot;
+              I enjoy turning ideas into practical, user-focused solutions through thoughtful design and development.
+              Whether it&apos;s streamlining workflows, improving accessibility, or creating engaging experiences,
+              I like building technology that people can actively use and benefit from.
             </p>
 
             <div className="pt-6 border-t-2 border-blue-100">
@@ -51,11 +51,10 @@ const About = () => {
                 my knowledge and grow.
               </p>
             </div>
-
           </div>
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl px-8 py-6 text-white shadow-xl">
-              <h3 className="text-xs uppercase text-blue-200 tracking-[0.3em] mb-6">
+            <div className=" skill-card bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl px-8 py-6 text-white shadow-xl">
+              <h3 className="text-md uppercase text-blue-200 tracking-[0.3em] mb-6">
                 Frontend
               </h3>
               <div className="space-y-3">
@@ -69,8 +68,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
-              <h3 className="text-xs uppercase text-neutral-400 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-white rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
+              <h3 className="text-md uppercase text-neutral-400 tracking-[0.3em] mb-6">
                 Backend
               </h3>
               <div className="space-y-3">
@@ -84,8 +83,8 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-neutral-200 rounded-2xl px-8 py-6 shadow-lg">
-              <h3 className="text-xs uppercase text-neutral-500 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-neutral-200 rounded-2xl px-8 py-6 shadow-lg">
+              <h3 className="text-md uppercase text-neutral-500 tracking-[0.3em] mb-6">
                 Tools & Services
               </h3>
               <div className="space-y-3">
