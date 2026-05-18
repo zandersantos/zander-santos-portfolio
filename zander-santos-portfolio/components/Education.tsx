@@ -1,113 +1,137 @@
 const Education = () => {
 
   return (
-    <section id="education" className="min-h-screen px-8 pt-20">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-md uppercase text-neutral-400 mb-10">
-          Education
-        </h2>
-        <div className="space-y-12">
-          <div className="border-l border-neutral-200 pl-6">
-            <div className="mb-6">
-              <h3 className="text-lg font-medium text-neutral-800 mb-1">
-                Business Information Technology
-              </h3>
-              <p className="text-sm uppercase text-neutral-400 mb-4">
-                Red River College Polytechnic • 2023 – 2026
-              </p>
-              <div className="space-y-5">
+    <section id="education" className="min-h-screen flex items-center px-8 py-20 bg-gradient-to-b from-white to-neutral-50">
+      <div className="max-w-screen-2xl mx-auto w-full">
+        <div className="space-y-10">
+          <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-md uppercase tracking-[0.2em] font-medium">
+            Education
+          </span>
 
-                <p className="text-sm leading-7 text-neutral-600 font-light">
-                  Focused on the full software development lifecycle, enterprise application development, and modern web architecture,
-                  this rigorous technical program combines C#/.NET Core development with full-stack web technologies including
-                  JavaScript, HTML, CSS, PHP, API-driven systems, relational databases, and cloud-based infrastructure.
-                  Maintained a <span className="block font-bold">4.3 GPA.</span>
+          <div className="space-y-6">
+            <div className="border-2 border-neutral-200 bg-white rounded-2xl p-8 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-xl">
+              <div className="flex flex-col flex-row items-start justify-between gap-3 mb-4">
+                <h3 className="text-2xl font-semibold text-neutral-900">
+                  Business Information Technology
+                </h3>
+                <span className="text-sm uppercase tracking-wider text-neutral-500 bg-neutral-100 px-4 py-2 rounded-full">
+                  2023 – 2026
+                </span>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-sm text-neutral-500 uppercase tracking-wide mb-3">
+                  Red River College Polytechnic
                 </p>
+                <p className="text-base leading-relaxed text-neutral-600 font-light">
+                  Focused on software development lifecycle practices, enterprise application development, and modern web architecture.
+                  Coursework emphasized C#/.NET Core and ASP.NET development alongside full-stack web technologies including JavaScript,
+                  HTML, and CSS. Experience working with relational databases including PostgreSQL, MSSQL, and MySQL, as well as
+                  cloud and infrastructure technologies such as AWS, Azure, Linux, and PowerShell. Additional exposure to API-driven systems,
+                  software testing, and development workflows. Maintained a <span className="font-semibold text-neutral-900">4.3 GPA.</span>
+                  Maintained a <span className="font-semibold text-neutral-900">4.3 GPA.</span>
+                </p>
+              </div>
 
-                <div className="pt-2 space-y-4">
-
-                  <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8">
-                    <h4 className="text-xs uppercase font-semibold tracking-wide text-neutral-500 min-w-[140px]">
+              <div className="border-t border-neutral-200 pt-6">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+                  <div>
+                    <h4 className="text-md uppercase font-semibold tracking-wide text-blue-600 mb-2">
                       Backend
                     </h4>
 
-                    <p className="text-sm text-neutral-600 font-light leading-6">
-                      C#, .NET Core, ASP.NET, MVC Architecture, REST APIs,
-                      Object-Oriented Design, Unit Testing,
-                      Validation & Exception Handling
+                    <p className="text-md text-neutral-600 font-light">
+                      C#, .NET Core, ASP.NET, Node.js, REST APIs, Unit Testing,
                     </p>
                   </div>
 
-                  <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8">
-                    <h4 className="text-xs uppercase font-semibold tracking-wide text-neutral-500 min-w-[140px]">
+                  <div>
+                    <h4 className="text-md uppercase font-semibold tracking-wide text-blue-600 mb-2">
                       Frontend
                     </h4>
 
-                    <p className="text-sm text-neutral-600 font-light leading-6">
-                      JavaScript, HTML, CSS, PHP,
-                      Responsive Design, Figma, Modern Web Architecture
+                    <p className="text-md text-neutral-600 font-light">
+                      JavaScript, HTML5, CSS3, Figma
                     </p>
                   </div>
 
-                  <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8">
-                    <h4 className="text-xs uppercase font-semibold tracking-wide text-neutral-500 min-w-[140px]">
+                  <div>
+                    <h4 className="text-md uppercase font-semibold tracking-wide text-blue-600 mb-2">
                       Databases
                     </h4>
 
-                    <p className="text-sm text-neutral-600 font-light leading-6">
-                      PostgreSQL, MSSQL, MySQL, T-SQL,
-                      Stored Procedures, Functions, Triggers, Relational Database Design
+                    <p className="text-md text-neutral-600 font-light">
+                      PostgreSQL, MSSQL, MySQL, MongoDB
                     </p>
                   </div>
 
-                  <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8">
-                    <h4 className="text-xs uppercase font-semibold tracking-wide text-neutral-500 min-w-[140px]">
+                  <div>
+                    <h4 className="text-md uppercase font-semibold tracking-wide text-blue-600 mb-2">
                       Infrastructure
                     </h4>
 
-                    <p className="text-sm text-neutral-600 font-light leading-6">
-                      Linux Server Administration, Azure, AWS,
-                      PowerShell, CI/CD Principles
+                    <p className="text-md text-neutral-600 font-light">
+                      AWS, Azure, Linux, PowerShell
                     </p>
                   </div>
 
-                  <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8">
-                    <h4 className="text-xs uppercase font-semibold tracking-wide text-neutral-500 min-w-[140px]">
-                      Foundations
+                  <div>
+                    <h4 className="text-md uppercase font-semibold tracking-wide text-blue-600 mb-2">
+                      Additional Coursework
                     </h4>
 
-                    <p className="text-sm text-neutral-600 font-light leading-6">
-                      Data Structures & Algorithms,
-                      Runtime Analysis, Hash Tables,
-                      Trees, Queues, Linked Lists,
-                      Python, Ruby on Rails
+                    <p className="text-md text-neutral-600 font-light">
+                      Data Structures & Algorithms, Python, PHP, Ruby on Rails
                     </p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-base font-medium text-neutral-700 mb-1">
-                    Continuous Development
-                  </h3>
-                  <p className="text-sm uppercase text-neutral-400 mb-4">
-                    Self-Paced Learning
-                  </p>
-                  <ul className="space-y-2 list-disc pl-5">
-                    <li className="text-sm text-neutral-600 font-light">
-                      Angular Essential Training
-                    </li>
-                    <li className="text-sm text-neutral-600 font-light">
-                      Node.js Essential Training
-                    </li>
-                    <li className="text-sm text-neutral-600 font-light">
-                      Selenium Essential Training (Automated Testing)
-                    </li>
-                    <li className="text-sm text-neutral-600 font-light">
-                      Microsoft Power Apps Essential Training
-                    </li>
-                    <li className="text-sm text-neutral-600 font-light">
-                      Microsoft Power BI Essential Training
-                    </li>
-                  </ul>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-neutral-200 rounded-2xl p-8 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-xl">
+              <div className="flex flex-col flex-row items-start justify-between gap-3 mb-4">
+                <h3 className="text-2xl font-semibold text-neutral-900">
+                  Continuous Development
+                </h3>
+                <span className="text-sm uppercase text-neutral-500 bg-neutral-100 px-4 py-2 rounded-full">
+                  Self-Paced Learning
+                </span>
+              </div>
+
+              <h3 className="text-md uppercase font-semibold tracking-wide text-blue-600 mb-2">
+                LinkedIn Learning
+              </h3>
+
+              <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">•</span>
+                  <span className="text-md text-neutral-600 font-light">
+                    Angular Essential Training
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">•</span>
+                  <span className="text-md text-neutral-600 font-light">
+                    Node.js Essential Training
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">•</span>
+                    <span className="text-md text-neutral-600 font-light">
+                      Selenium Essential Training
+                    </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">•</span>
+                  <span className="text-md text-neutral-600 font-light">
+                    Microsoft Power Apps
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">•</span>
+                  <span className="text-md text-neutral-600 font-light">
+                    Microsoft Power BI
+                  </span>
                 </div>
               </div>
             </div>
