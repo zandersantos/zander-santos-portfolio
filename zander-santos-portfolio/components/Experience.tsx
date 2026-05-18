@@ -23,7 +23,7 @@ const Experience = () => {
                   Confidential Industry Project
                 </p>
                 <p className="text-sm text-neutral-500 uppercase tracking-wide">
-                  ACE Project Space, Red River College Polytech
+                  ACE Project Space, Red River College Polytechnic
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ const Experience = () => {
                   ConneXions Global Solutions
                 </p>
                 <p className="text-sm text-neutral-500 uppercase tracking-wide">
-                  ACE Project Space, Red River College Polytech
+                  ACE Project Space, Red River College Polytechnic
                 </p>
               </div>
 
