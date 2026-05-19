@@ -26,7 +26,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p>Designed and Built by Zander Santos - 2026</p>
+      <p className="text-sm uppercase tracking-wide text-neutral-400 mb-2">Designed and Built by Zander Santos - 2026</p>
     </footer>
   )
 }
