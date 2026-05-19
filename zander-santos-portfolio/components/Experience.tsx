@@ -18,7 +18,7 @@ const Experience = () => {
                 </span>
               </div>
 
-              <div className="mb-6">
+              <div className="mb-2">
                 <p className="text-lg font-medium text-blue-600">
                   Confidential Industry Project
                 </p>
@@ -27,7 +27,7 @@ const Experience = () => {
                 </p>
               </div>
 
-              <p className="text-lg leading-7 text-neutral-600 font-light">
+              <p className="text-md leading-relaxed text-neutral-600 mb-6">
                 Following my initial term, I was selected for two consecutive contracts through competitive interviews,
                 transitioning from a hybrid Project Manager/Developer role to Primary Full Stack Developer.
                 I worked across the entire application stack, with primary focus on administrative systems and internal tooling.
@@ -39,6 +39,42 @@ const Experience = () => {
                 I led a critical production system restoration by re-engineering the deployment environment on DigitalOcean,
                 utilizing Bash via SSH for server configuration and troubleshooting, while optimizing CI/CD pipelines to maintain 24/7 system stability.
               </p>
+
+              <div className="flex flex-wrap gap-3 items-baseline pt-2">
+                <h4 className="text-xs uppercase text-neutral-500">
+                  Tech Stack
+                </h4>
+
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    React
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    Next.js
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    TypeScript
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    Tailwind CSS
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    Node.js
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    PostgreSQL
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    Prisma ORM
+                  </span>
+                </div>
+              </div>
             </div>
 
             <div className="border-2 border-neutral-200 rounded-2xl p-10 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-xl bg-white">
@@ -51,7 +87,7 @@ const Experience = () => {
                 </span>
               </div>
 
-              <div className="mb-6">
+              <div className="mb-2">
                 <p className="text-lg font-medium text-blue-600">
                   ConneXions Global Solutions
                 </p>
@@ -60,7 +96,7 @@ const Experience = () => {
                 </p>
               </div>
 
-              <p className="text-lg leading-7 text-neutral-600 font-light">
+              <p className="text-md leading-relaxed text-neutral-600 mb-6">
                 I developed core features for a React Native mobile application focused on community safety,
                 including redesigning and rebuilding the entire user onboarding experience for standard users and users with elevated permissions.
                 I designed the onboarding flow in Figma, then implemented it by building the UI components,
@@ -70,6 +106,29 @@ const Experience = () => {
                 I focused on delivering reliable system behavior in an Agile environment,
                 ensuring the application met the accessibility and security needs of at-risk populations.
               </p>
+
+              <div className="flex flex-wrap gap-3 items-baseline pt-2">
+                <h4 className="text-xs uppercase text-neutral-500">
+                  Tech Stack
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    React Native
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    PostgreSQL
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    Twilio API
+                  </span>
+
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                    Figma
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
