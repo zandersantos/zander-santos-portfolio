@@ -29,7 +29,6 @@ const Education = () => {
                   HTML, and CSS. Experience working with relational databases including PostgreSQL, MSSQL, and MySQL, as well as
                   cloud and infrastructure technologies such as AWS, Azure, Linux, and PowerShell. Additional exposure to API-driven systems,
                   software testing, and development workflows. Maintained a <span className="font-semibold text-neutral-900">4.3 GPA.</span>
-                  Maintained a <span className="font-semibold text-neutral-900">4.3 GPA.</span>
                 </p>
               </div>
 
