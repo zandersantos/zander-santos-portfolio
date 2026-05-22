@@ -12,12 +12,11 @@ body {
   background:
     radial-gradient(ellipse at top left, rgba(6, 182, 212, 0.15), transparent 50%),
     radial-gradient(ellipse at top right, rgba(189, 236, 72, 0.12), transparent 50%),
-    radial-gradient(ellipse at bottom center, rgba(168, 85, 247, 0.1), transparent 60%)
+    radial-gradient(ellipse at bottom center, rgba(168, 85, 247, 0.1), transparent 60%),
     var(--background);
 
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body::before {
@@ -29,7 +28,7 @@ body::before {
     linear-gradient(rgba(6, 182, 212, 0.3) 1px, transparent 1px),
     linear-gradient(90deg, rgba(6, 182, 212, 0.3) 1px, transparent 1px);
 
-  background-size: 40px 40px;
+  background-size: 50px 50px;
 
     mask-image: radial-gradient(
     ellipse 80% 60% at 50% 40%,
@@ -38,7 +37,6 @@ body::before {
   );
 
   z-index: -1;
-
 }
 
 html {
@@ -53,12 +51,31 @@ html {
   color: #06b6d4;
   letter-spacing: 0.05em;
   border: 2px solid #06b6d4;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
 
   transition:
     all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #06b6d4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.btn-primary:hover::before {
+  transform: scaleX(1);
+}
+
 .btn-primary:hover {
+  color: #0a0a0f;
   box-shadow:
     0 0 20px rgba(6, 182, 212, 0.4),
     0 0 40px rgba(6, 182, 212, 0.2),
@@ -71,17 +88,24 @@ html {
   position: absolute;
 
   left: 50%;
-  bottom: -4px;
+  bottom: -8px;
 
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid rgba(23, 23, 23, 0.7);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #06b6d4;
 
   opacity: 0;
 
+  transform: translateX(-50%) translateY(-4px);
+
   transition:
-    opacity 200ms ease,
-    transform 200ms ease;
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.btn-primary:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .footer-link {
@@ -114,9 +138,26 @@ html {
   border-radius: 9999px;
   background-color: white;
 
+  position: relative;
+  overflow: hidden;
+
   transition:
-    transform 200ms ease,
-    opacity 200ms ease;
+    all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-down::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #06b6d4;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.scroll-down:hover::before {
+  transform: scaleX(1);
 }
 
 .scroll-down::after {
@@ -134,12 +175,15 @@ html {
 
 .scroll-down:hover {
   transform: translateY(-4px);
-  border-color: rgba(96, 165, 250, 0.9);
-
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+  color: white;
+  box-shadow:
+    0 0 20px rgba(6, 182, 212, 0.4),
+    0 0 40px rgba(6, 182, 212, 0.2),
+    inset 0 0 20px rgba(6, 182, 212, 0.1);
 }
 
 .skill-card {
+  background: rgba(20, 20, 30, 0.6);
   transition:
     transform 220ms ease,
     box-shadow 220ms ease;
