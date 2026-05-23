@@ -22,39 +22,42 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen flex items-center px-8 py-10 bg-white">
+    <section id="about" className="min-h-screen flex items-center px-8 py-4">
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
-            <span className="inline-block px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-md uppercase tracking-[0.2em] font-medium mb-6">
+            <span className="inline-block px-5 py-2 bg-white text-black rounded-full text-md uppercase tracking-[0.2em] font-bold mb-8">
               About
             </span>
 
-            <h2 className="text-4xl font-bold tracking-tight text-neutral-900 mb-6">
-              Building digital experiences
-            </h2>
+            <div className="about-info bg-gray-900/40 backdrop-blur-md border border-cyan-500/20 rounded-3xl p-10">
+              <h2 className="text-4xl tracking-tight text-white mb-6">
+                Building digital experiences
+              </h2>
 
-            <p className="text-xl leading-relaxed text-neutral-600">
-              I&apos;m a full-stack developer based in <span className="text-neutral-900 font-medium">Winnipeg </span> who&apos;s
-              passionate about building digital experiences that genuinely help people and make everyday tasks easier.
-            </p>
-
-            <p className="text-lg leading-relaxed text-neutral-500">
-              I enjoy turning ideas into practical, user-focused solutions through thoughtful design and development.
-              Whether it&apos;s streamlining workflows, improving accessibility, or creating engaging experiences,
-              I like building technology that people can actively use and benefit from.
-            </p>
-
-            <div className="pt-6 border-t-2 border-blue-100">
-              <p className="text-base text-neutral-600 italic">
-                Complex problems energize me, and I&apos;m always looking for opportunities to expand
-                my knowledge and grow.
+              <p className="text-xl leading-relaxed text-gray-300 pb-4">
+                I&apos;m a full-stack developer based in <span className="text-cyan-400 font-medium">Winnipeg </span> who&apos;s
+                passionate about building digital experiences that genuinely help people and make everyday tasks easier.
               </p>
+              <div className="pt-4 border-t-2 border-cyan-500/60">
+                <p className="text-lg leading-relaxed text-gray-400 pb-4">
+                  I enjoy turning ideas into practical, user-focused solutions through thoughtful design and development.
+                  Whether it&apos;s streamlining workflows, improving accessibility, or creating engaging experiences,
+                  I like building technology that people can actively use and benefit from.
+                </p>
+              </div>
+
+              <div className="pt-6 border-t-2 border-cyan-500/60">
+                <p className="text-base text-gray-300 italic">
+                  Complex problems energize me, and I&apos;m always looking for opportunities to expand
+                  my knowledge and grow.
+                </p>
+              </div>
             </div>
           </div>
           <div className="space-y-6">
-            <div className=" skill-card bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl px-8 py-6 text-white shadow-xl">
-              <h3 className="text-md uppercase text-blue-200 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-gradient-to-br from-cyan-600 to-cyan-700 rounded-2xl px-8 py-6 text-white shadow-xl">
+              <h3 className="text-md uppercase text-cyan-200 tracking-[0.3em] mb-6">
                 Frontend
               </h3>
               <div className="space-y-3">
@@ -68,14 +71,14 @@ const About = () => {
               </div>
             </div>
 
-            <div className="skill-card bg-white rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
-              <h3 className="text-md uppercase text-neutral-400 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-gray-900/80 rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
+              <h3 className="text-md uppercase text-purple-400 tracking-[0.3em] mb-6">
                 Backend
               </h3>
               <div className="space-y-3">
                 {backend.map((skill) => (
                   <div key={skill} className="flex items-center gap-3 group">
-                    <span className="text-md text-neutral-700 font-light">
+                    <span className="text-md text-white font-light">
                       - {skill}
                     </span>
                   </div>
@@ -83,14 +86,14 @@ const About = () => {
               </div>
             </div>
 
-            <div className="skill-card bg-neutral-200 rounded-2xl px-8 py-6 shadow-lg">
-              <h3 className="text-md uppercase text-neutral-500 tracking-[0.3em] mb-6">
+            <div className="skill-card bg-gray-400/80 rounded-2xl px-8 py-6 shadow-lg">
+              <h3 className="text-md uppercase text-blue-800 tracking-[0.3em] mb-6">
                 Tools & Services
               </h3>
               <div className="space-y-3">
                 {tools.map((skill) => (
                   <div key={skill} className="flex items-center gap-3 group">
-                    <span className="text-md text-neutral-900 font-light">
+                    <span className="text-md text-white font-light">
                      - {skill}
                     </span>
                   </div>
