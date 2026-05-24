@@ -8,26 +8,26 @@ const Experience = () => {
             Experience
           </span>
           <div className="space-y-8">
-            <div className="bg-white border-2 border-neutral-200 rounded-2xl p-10 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-xl">
-              <div className="flex flex-row items-start justify-between mb-4">
-                <h3 className="text-xl md:text-3xl font-semibold text-neutral-900">
+            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+                <h3 className="text-3xl font-semibold text-gray-900">
                   Full Stack Software Developer
                 </h3>
-                <span className="text-md uppercase tracking-wider text-neutral-500 bg-neutral-100 px-4 py-2 rounded-full">
+                <span className="text-sm uppercase tracking-wider text-cyan-600 bg-cyan-50 border border-cyan-200 px-4 py-2 rounded-full whitespace-nowrap font-medium">
                   (August 2025 – May 2026)
                 </span>
               </div>
 
-              <div className="mb-2">
-                <p className="text-lg font-medium text-blue-600">
+              <div className="mb-4">
+                <p className="text-lg font-semibold text-cyan-600">
                   Confidential Industry Project
                 </p>
-                <p className="text-sm text-neutral-500 uppercase tracking-wide">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
                   ACE Project Space, Red River College Polytechnic
                 </p>
               </div>
 
-              <p className="text-md leading-relaxed text-neutral-600 mb-6">
+              <p className="text-base leading-relaxed text-gray-700 mb-4">
                 Following my initial term, I was selected for two consecutive contracts through competitive interviews,
                 transitioning from a hybrid Project Manager/Developer role to Primary Full Stack Developer.
                 I worked across the entire application stack, with primary focus on administrative systems and internal tooling.
@@ -40,63 +40,63 @@ const Experience = () => {
                 utilizing Bash via SSH for server configuration and troubleshooting, while optimizing CI/CD pipelines to maintain 24/7 system stability.
               </p>
 
-              <div className="flex flex-wrap gap-3 items-baseline pt-2">
-                <h4 className="text-xs uppercase text-neutral-500">
+              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
+                <h4 className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
                   Tech Stack
                 </h4>
 
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     React
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     Next.js
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     TypeScript
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     Tailwind CSS
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     Node.js
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     PostgreSQL
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-cyan-50 text-cyan-700 border border-cyan-200 rounded-full text-xs font-medium">
                     Prisma ORM
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="border-2 border-neutral-200 rounded-2xl p-10 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-xl bg-white">
-              <div className="flex flex-row items-start justify-between mb-4">
-                <h3 className="text-xl md:text-3xl font-semibold text-neutral-900">
+            <div className="skill-card bg-white/95 backdrop-blur-sm border border-purple-500/40 rounded-2xl p-8 shadow-xl">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+                <h3 className="text-3xl font-semibold text-gray-900">
                   Full Stack Software Developer
                 </h3>
-                <span className="text-md uppercase tracking-wider text-neutral-500 bg-neutral-100 px-4 py-2 rounded-full">
+                <span className="text-sm uppercase tracking-wider  text-purple-600 bg-purple-50 border border-purple-200 px-4 py-2 rounded-full whitespace-nowrap font-medium">
                   (May 2025 – August 2025)
                 </span>
               </div>
 
-              <div className="mb-2">
-                <p className="text-lg font-medium text-blue-600">
+              <div className="mb-4">
+                <p className="text-lg font-semibold text-purple-600">
                   ConneXions Global Solutions
                 </p>
-                <p className="text-sm text-neutral-500 uppercase tracking-wide">
+                <p className="text-sm text-gray-500 uppercase tracking-wide">
                   ACE Project Space, Red River College Polytechnic
                 </p>
               </div>
 
-              <p className="text-md leading-relaxed text-neutral-600 mb-6">
+              <p className="text-base leading-relaxed text-gray-700 mb-4">
                 I developed core features for a React Native mobile application focused on community safety,
                 including redesigning and rebuilding the entire user onboarding experience for standard users and users with elevated permissions.
                 I designed the onboarding flow in Figma, then implemented it by building the UI components,
@@ -107,24 +107,24 @@ const Experience = () => {
                 ensuring the application met the accessibility and security needs of at-risk populations.
               </p>
 
-              <div className="flex flex-wrap gap-3 items-baseline pt-2">
-                <h4 className="text-xs uppercase text-neutral-500">
+              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-purple-200">
+                <h4 className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
                   Tech Stack
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-xs font-medium">
                     React Native
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-xs font-medium">
                     PostgreSQL
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-xs font-medium">
                     Twilio API
                   </span>
 
-                  <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">
+                  <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-xs font-medium">
                     Figma
                   </span>
                 </div>
