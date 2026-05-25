@@ -9,7 +9,7 @@
 
 - Overview
 - Demo
-- Tech stack
+- Tech stack used
 - Features
 - Projects
 - Getting started
@@ -26,36 +26,43 @@ Built with Next.js and React, it highlights my projects, skills, and full-stack 
 ---
 
 ## Demo
-**In Progress**
 
-- Live demo:
+- Live Site: https://zander-santos-portfolio.vercel.app/
 - Screenshot:
 
 --
 
-## Tech Stack
+## Tech Stack Used
 
 - Framework: Next.js (App Router)
 - Languages: TypeScript, JavaScript
 - Frontend: React
-- Styling: CSS Modules
+- Styling: Tailwind CSS + Global CSS (Custom Styling)
 - Package Manager: npm
 
 ---
 
 ## Features
 
-- Landing / Home with brief intro and call-to-action — In progress
-- Projects gallery with cards and detail pages — In progress
-- About / Experience / Education sections — In progress
+- Landing page with developer introduction and navigation
+- Header and Footer sections
+- Experience, Education, and Projects sections
+- Single-page portfolio architecture
+- Smooth scrolling section navigation
 
 ---
 
 ## Projects
 
-This portfolio represents a growing collection of full-stack and software development projects that are currently in progress and planned for development.
+This portfolio represents a growing collection of professional, academic, and personal development work.
 
-Rather than being limited to a single category, projects are designed to combine multiple parts of the stack, including frontend interfaces, backend services, and database systems.
+Featured projects include:
+
+- Mobile application development work completed through ACE Project Space using React Native, Supabase, PostgreSQL, and Twilio integration
+- Academic full-stack web applications built with Ruby on Rails and relational databases
+- Database-driven applications featuring authentication systems, API integration, and CRUD functionality
+
+The portfolio will continue expanding as I build additional projects in React, Next.js, and C#/.NET.
 
 Planned and in-progress work includes:
 
@@ -76,8 +83,8 @@ Planned and in-progress work includes:
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/zander-portfolio.git
-cd zander-portfolio
+git clone https://github.com/zandersantos/zander-santos-portfolio.git
+cd zander-santos-portfolio
 npm install
 npm run dev
 # visit http://localhost:3000
@@ -87,5 +94,6 @@ npm run dev
 
 ## Project structure
 
-- `app/` — Next.js App Router pages and layout
+- `app/` — Next.js App Router pages and layouts
+- `components/` — Reusable UI components
 - `public/` — static assets
