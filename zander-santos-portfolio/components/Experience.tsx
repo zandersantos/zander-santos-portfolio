@@ -9,7 +9,7 @@ const Experience = () => {
           </span>
           <div className="space-y-8">
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+              <div className="flex flex-col flex-row items-start justify-between mb-4 gap-4">
                 <h3 className="text-3xl font-semibold text-gray-900">
                   Full Stack Software Developer
                 </h3>
