@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <nav className="flex justify-end gap-4 p-4">
+    <nav className="flex flex-col sm:flex-row sm:justify-end items-center gap-2 sm:gap-4 p-3 sm:p-4">
       <a href="#about" className="btn-primary">About</a>
       <a href="#experience" className="btn-primary">Experience</a>
       <a href="#education" className="btn-primary">Education</a>

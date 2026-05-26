@@ -1,3 +1,5 @@
+import SectionLabel from "./ui/SectionLabel";
+
 const About = () => {
 
   const frontend = [
@@ -22,13 +24,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen flex items-center px-8 py-4">
+    <section id="about" className="min-h-screen flex items-center px-4 sm:px-6 md:px-8 py-4">
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
-            <span className="inline-block px-5 py-2 bg-white text-black rounded-full text-md uppercase tracking-[0.2em] font-bold mb-8">
+            <SectionLabel>
               About
-            </span>
+            </SectionLabel>
 
             <div className="about-info bg-gray-900/40 backdrop-blur-md border border-cyan-500/20 rounded-3xl p-10">
               <h2 className="text-4xl tracking-tight text-white mb-6">
