@@ -1,143 +1,149 @@
+import Paragraph from "./ui/Paragraph";
+import RoleBadge from "./ui/RoleBadge";
+import SectionLabel from "./ui/SectionLabel";
+import TechBadge from "./ui/TechBadge";
+import Title from "./ui/Title";
+
 const Education = () => {
 
   return (
     <section id="education" className="min-h-screen flex items-center px-10 pt-20">
       <div className="max-w-screen-2xl mx-auto w-full">
         <div className="space-y-12">
-          <span className="inline-block px-5 py-2 bg-white text-black rounded-full text-md uppercase tracking-[0.2em] font-bold mb-8">
+          <SectionLabel>
             Education
-          </span>
+          </SectionLabel>
 
           <div className="space-y-8">
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <h3 className="text-3xl font-semibold text-gray-900">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-3">
+                <Title>
                   Business Information Technology
-                </h3>
-                <span className="text-sm uppercase tracking-wider text-cyan-600 bg-cyan-50 border border-cyan-200 px-4 py-2 rounded-full whitespace-nowrap font-medium">
+                </Title>
+                <RoleBadge>
                   2023 – 2026
-                </span>
+                </RoleBadge>
               </div>
 
               <div className="mb-4">
                 <p className="text-lg font-semibold text-cyan-600">
                   Red River College Polytechnic
                 </p>
-                <p className="text-base leading-relaxed text-gray-700 mb-4">
+                <Paragraph>
                   Focused on software development lifecycle practices, enterprise application development, and modern web architecture.
                   Coursework emphasized C#/.NET Core and ASP.NET development alongside full-stack web technologies including JavaScript,
                   HTML, and CSS. Experience working with relational databases including PostgreSQL, MSSQL, and MySQL, as well as
                   cloud and infrastructure technologies such as AWS, Azure, Linux, and PowerShell. Additional exposure to API-driven systems,
                   software testing, and development workflows. Maintained a <span className="font-semibold text-neutral-900">4.3 GPA.</span>
-                </p>
+                </Paragraph>
               </div>
 
               <div className="pt-4 border-t border-cyan-200">
-                <div className="grid grid-cols-2 gap-4 items-start">
-                  <div className="bg-cyan-50/60 border border-cyan-100 rounded-2xl p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+                  <div className="bg-white border border-cyan-100 rounded-2xl p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                     <div className="flex flex-wrap gap-2">
                       <h4 className="text-sm uppercase font-bold tracking-wide text-cyan-700 py-1.5">
                         Backend:
                       </h4>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      <TechBadge variant ="cyan">
                         C#
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         .NET Core
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         ASP.NET
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Node.js
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         REST APIs
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Unit Testing
-                      </span>
+                      </TechBadge>
                     </div>
                   </div>
 
-                  <div className="bg-cyan-50/60 border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <div className="bg-white border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <div className="flex flex-wrap gap-2">
                       <h4 className="text-sm uppercase font-bold tracking-wide text-cyan-700 py-1.5">
                         Frontend
                       </h4>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      <TechBadge variant ="cyan">
                         JavaScript
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         HTML5
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         CSS3
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Figma
-                      </span>
+                      </TechBadge>
                     </div>
                   </div>
 
-                  <div className="bg-cyan-50/60 border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <div className="bg-white border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div className="flex flex-wrap gap-2">
                       <h4 className="text-sm uppercase font-bold tracking-wide text-cyan-700 py-1.5">
                         Databases
                       </h4>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      <TechBadge variant ="cyan">
                         PostgreSQL
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         MSSQL
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         MySQL
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         MongoDB
-                      </span>
+                      </TechBadge>
                     </div>
                   </div>
 
-                  <div className="bg-cyan-50/60 border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <div className="bg-white border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div className="flex flex-wrap gap-2">
                       <h4 className="text-sm uppercase font-bold tracking-wide text-cyan-700 py-1.5">
                         Infrastructure
                       </h4>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      <TechBadge variant ="cyan">
                         AWS
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Azure
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Linux
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         PowerShell
-                      </span>
+                      </TechBadge>
                     </div>
                   </div>
 
-                  <div className="bg-cyan-50/60 border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+                  <div className="bg-white border border-cyan-100 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div className="flex flex-wrap gap-2">
                       <h4 className="text-sm uppercase font-bold tracking-wide text-cyan-700 py-1.5">
                         Additional Coursework
                       </h4>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      <TechBadge variant ="cyan">
                         Data Structures & Algorithms
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Python
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         PHP
-                      </span>
-                      <span className="px-3 py-1.5 bg-white text-cyan-700 border border-cyan-200 rounded-full text-sm font-medium">
+                      </TechBadge>
+                      <TechBadge variant ="cyan">
                         Ruby on Rails
-                      </span>
+                      </TechBadge>
                     </div>
                   </div>
                 </div>
@@ -145,13 +151,13 @@ const Education = () => {
             </div>
 
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col flex-row items-start justify-between mb-4 gap-4">
-                <h3 className="text-3xl font-semibold text-gray-900">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-3">
+                <Title>
                   Continuous Development
-                </h3>
-                <span className="text-sm uppercase tracking-wider text-purple-600 bg-purple-50 border border-purple-200 px-4 py-2 rounded-full whitespace-nowrap font-medium">
+                </Title>
+                <RoleBadge>
                   Self-Paced Learning
-                </span>
+                </RoleBadge>
               </div>
 
               <h3 className="text-lg font-semibold text-purple-600 pb-2">
@@ -160,25 +166,25 @@ const Education = () => {
 
               <div className="flex flex-wrap gap-2">
 
-                <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-md font-medium">
+                <TechBadge variant = "purple">
                   Angular Essential Training
-                </span>
+                </TechBadge>
 
-                <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-md font-medium">
+                <TechBadge variant = "purple">
                   Node.js Essential Training
-                </span>
+                </TechBadge>
 
-                <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-md font-medium">
+                <TechBadge variant = "purple">
                   Selenium Essential Training
-                </span>
+                </TechBadge>
 
-                <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-md font-medium">
+                <TechBadge variant = "purple">
                   Microsoft Power Apps
-                </span>
+                </TechBadge>
 
-                <span className="px-3 py-1.5 bg-purple-50 text-purple-700 border border-purple-200 rounded-full text-md font-medium">
+                <TechBadge variant = "purple">
                   Microsoft Power BI
-                </span>
+                </TechBadge>
 
               </div>
             </div>
