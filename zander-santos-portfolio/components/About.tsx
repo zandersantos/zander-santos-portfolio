@@ -3,37 +3,46 @@ import SectionLabel from "./ui/SectionLabel";
 const About = () => {
 
   const frontend = [
-    'JavaScript',
-    'React',
-    'Next.js',
-    'TypeScript',
-    'React Native',
-    'Tailwind CSS',
+  "React",
+  "Next.js",
+  "React Native",
+  "TypeScript",
+  "JavaScript",
+  "Tailwind CSS",
   ];
 
   const backend = [
-    'SQL (PostgreSQL)',
-    'C# / .NET',
-    'Node.js',
+    "C# / .NET",
+    "Node.js",
+    "REST APIs",
   ];
 
-  const tools = [
-    'Git/GitHub',
-    'Supabase',
-    'AWS',
+  const database = [
+    "Prisma ORM",
+    "Supabase",
+    "PostgreSQL",
+    "SQL",
+  ];
+
+  const tool = [
+    "Git/GitHub",
+    "DigitalOcean",
+    "Vercel",
+    "Azure",
+    "AWS",
   ];
 
   return (
     <section id="about" className="min-h-screen flex items-center px-4 sm:px-6 md:px-8 py-4">
-      <div className="max-w-6xl mx-auto w-full">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
-          <div className="space-y-8">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="space-y-8 max-w-xl">
             <SectionLabel>
               About
             </SectionLabel>
 
             <div className="about-info bg-gray-900/40 backdrop-blur-md border border-cyan-500/20 rounded-3xl p-10">
-              <h2 className="text-4xl tracking-tight text-white mb-6">
+              <h2 className="text-3xl tracking-tight text-white mb-6">
                 Building digital experiences
               </h2>
 
@@ -57,48 +66,56 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-6">
-            <div className="skill-card bg-gradient-to-br from-cyan-600 to-cyan-700 rounded-2xl px-8 py-6 text-white shadow-xl">
+
+          <div className="grid grid-cols-1 gap-6">
+            <div className="skill-card w-full bg-cyan-600 rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
               <h3 className="text-md uppercase text-cyan-200 tracking-[0.3em] mb-6">
                 Frontend
               </h3>
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-2">
                 {frontend.map((skill) => (
-                  <div key={skill} className="flex item-center gap-3 group">
-                    <span className="text-md font-light">
-                      - {skill}
-                    </span>
-                  </div>
+                  <span key={skill} className="px-3 py-1 rounded-full bg-black/20 text-md font-light">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
 
-            <div className="skill-card bg-gray-900/80 rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
+            <div className="skill-card w-full bg-purple-900 rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
               <h3 className="text-md uppercase text-purple-400 tracking-[0.3em] mb-6">
                 Backend
               </h3>
-              <div className="space-y-3">
+              <div className="flex flex-wrap gap-2">
                 {backend.map((skill) => (
-                  <div key={skill} className="flex items-center gap-3 group">
-                    <span className="text-md text-white font-light">
-                      - {skill}
-                    </span>
-                  </div>
+                  <span key={skill} className="px-3 py-1 rounded-full bg-black/50 text-md font-light">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
 
-            <div className="skill-card bg-gray-400/80 rounded-2xl px-8 py-6 shadow-lg">
-              <h3 className="text-md uppercase text-blue-800 tracking-[0.3em] mb-6">
-                Tools & Services
+            <div className="skill-card w-full bg-orange-900 rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
+              <h3 className="text-md uppercase text-orange-400 tracking-[0.3em] mb-6">
+                Database
               </h3>
-              <div className="space-y-3">
-                {tools.map((skill) => (
-                  <div key={skill} className="flex items-center gap-3 group">
-                    <span className="text-md text-white font-light">
-                     - {skill}
-                    </span>
-                  </div>
+              <div className="flex flex-wrap gap-2">
+                {database.map((skill) => (
+                  <span key={skill} className="px-3 py-1 rounded-full bg-black/50 text-md font-light">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="skill-card w-full bg-gray-900 rounded-2xl px-8 py-6 shadow-lg border border-neutral-200">
+              <h3 className="text-md uppercase text-gray-400 tracking-[0.3em] mb-6">
+                Cloud & Deployment
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {tool.map((skill) => (
+                  <span key={skill} className="px-3 py-1 rounded-full bg-black text-md font-light">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </div>
@@ -106,7 +123,6 @@ const About = () => {
         </div>
       </div>
     </section>
-
   );
 };
 
