@@ -17,6 +17,51 @@ const Projects = () => {
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
                 <Title>
+                  CourtFlow
+                </Title>
+                <RoleBadge>
+                  Personal
+                </RoleBadge>
+              </div>
+
+              <Paragraph>
+                Full-stack NBA season and playoff tracker built with Next.js and PostgreSQL.
+                Designed a relational database using Prisma ORM to manage teams, players, and
+                games while integrating the BallDontLie API for automated data synchronization.
+                Implemented season schedules, playoff series tracking, team standings, live game
+                scoreboards, filtering, pagination, and server-rendered data fetching with
+                responsive user interfaces.
+              </Paragraph>
+
+              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
+                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
+                  Tech Stack
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <TechBadge variant="cyan">
+                    Next.js
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    TypeScript
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    PostgreSQL
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    Prisma ORM
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    Tailwind CSS
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    BallDontLie API
+                  </TechBadge>
+                </div>
+              </div>
+            </div>
+            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+                <Title>
                   ConneXions Mobile App
                 </Title>
                 <RoleBadge>
@@ -122,51 +167,6 @@ const Projects = () => {
                   </TechBadge>
                   <TechBadge variant = "cyan">
                     API Integration
-                  </TechBadge>
-                </div>
-              </div>
-            </div>
-            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <Title>
-                  CourtFlow
-                </Title>
-                <RoleBadge>
-                  Personal
-                </RoleBadge>
-              </div>
-
-              <Paragraph>
-                Full-stack NBA season and playoff tracker built with Next.js and PostgreSQL.
-                Designed a relational database using Prisma ORM to manage teams, players, and
-                games while integrating the BallDontLie API for automated data synchronization.
-                Implemented season schedules, playoff series tracking, team standings, live game
-                scoreboards, filtering, pagination, and server-rendered data fetching with
-                responsive user interfaces.
-              </Paragraph>
-
-              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                  Tech Stack
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <TechBadge variant="cyan">
-                    Next.js
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    TypeScript
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    PostgreSQL
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Prisma ORM
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Tailwind CSS
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    BallDontLie API
                   </TechBadge>
                 </div>
               </div>
