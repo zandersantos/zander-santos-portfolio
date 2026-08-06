@@ -48,6 +48,9 @@ const Projects = () => {
                     PostgreSQL
                   </TechBadge>
                   <TechBadge variant="cyan">
+                    Neon
+                  </TechBadge>
+                  <TechBadge variant="cyan">
                     Prisma ORM
                   </TechBadge>
                   <TechBadge variant="cyan">
