@@ -62,6 +62,53 @@ const Projects = () => {
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
                 <Title>
+                  Game Store Rental Tracker
+                </Title>
+                <RoleBadge>
+                  Personal
+                </RoleBadge>
+              </div>
+
+              <Paragraph>
+                Spec-driven inventory and rental tracking MVP for tabletop game stores.
+                Architected using an end-to-end AI-assisted workflow with Cursor to build
+                server-driven category filtering, real-time inventory status management,
+                and atomic status updates. Designed a relational schema separating active item
+                states from chronological audit logs using Prisma ORM and Supabase PostgreSQL.
+              </Paragraph>
+
+              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
+                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
+                  Tech Stack
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <TechBadge variant="cyan">
+                    Next.js
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    TypeScript
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    PostgreSQL
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    Supabase
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    Prisma ORM
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    Tailwind CSS
+                  </TechBadge>
+                  <TechBadge variant="cyan">
+                    Cursor AI
+                  </TechBadge>
+                </div>
+              </div>
+            </div>
+            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+                <Title>
                   ConneXions Mobile App
                 </Title>
                 <RoleBadge>
