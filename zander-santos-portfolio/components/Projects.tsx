@@ -4,6 +4,7 @@ import RoleBadge from "./ui/RoleBadge";
 import SectionLabel from "./ui/SectionLabel";
 import TechBadge from "./ui/TechBadge";
 import Title from "./ui/Title";
+import ProjectLink from "./ui/ProjectLink";
 
 type Project = {
   title: string;
@@ -131,27 +132,19 @@ const Projects = () => {
                       ))}
                     </div>
                   </div>
-
                   {(p.live || p.repo) && (
-                    <a
-                      href={p.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary isolate"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-
-                  {p.repo && (
-                    <a
-                      href={p.repo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary isolate"
-                    >
-                      GitHub
-                    </a>
+                    <div className="flex flex-wrap gap-3 pt-6">
+                      {p.live && (
+                        <ProjectLink href={p.live} variant="solid">
+                          Live Demo
+                        </ProjectLink>
+                      )}
+                      {p.repo && (
+                        <ProjectLink href={p.repo} variant="outline">
+                          GitHub
+                        </ProjectLink>
+                      )}
+                    </div>
                   )}
                 </div>
                </article>
