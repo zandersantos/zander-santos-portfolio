@@ -1,226 +1,175 @@
+import Image from "next/image";
 import Paragraph from "./ui/Paragraph";
 import RoleBadge from "./ui/RoleBadge";
 import SectionLabel from "./ui/SectionLabel";
 import TechBadge from "./ui/TechBadge";
 import Title from "./ui/Title";
+import ProjectLink from "./ui/ProjectLink";
+
+type Project = {
+  title: string;
+  role: string;
+  description: string;
+  stack: string[];
+  image?: string;
+  mobileImages?: string[];
+  live?: string;
+  repo?: string;
+}
+
+const projects: Project[] = [
+  {
+    title: "CourtFlow",
+    role: "Personal",
+    description:
+    `
+      Full-stack NBA season and playoff tracker built with Next.js and PostgreSQL.
+      Designed a relational database using Prisma ORM to manage teams, players, and games
+      while integrating the BallDontLie API for automated data synchronization.
+      Implemented season schedules, playoff series tracking, team standings, live game scoreboards,
+      filtering, pagination, and server-rendered data fetching with responsive user interfaces.
+    `,
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "Neon", "Prisma ORM", "Tailwind CSS", "BallDontLie API"],
+    image: "/projects/CourtFlowDash.png",
+    live: "https://court-flow-coral.vercel.app/",
+    repo: "https://github.com/zandersantos/court-flow.git"
+  },
+  {
+    title: "Game Store Rental Tracker",
+    role: "Personal",
+    description:
+    `
+      Spec-driven inventory and rental tracking MVP for tabletop game stores.
+      Architected using an end-to-end AI-assisted workflow with Cursor and Claude Code to build
+      server-driven category filtering, real-time inventory status management,
+      and atomic status updates. Designed a relational schema separating active item
+      states from chronological audit logs using Prisma ORM and Supabase PostgreSQL.
+    `,
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Prisma ORM", "Tailwind CSS", "Cursor AI", "Claude Code"],
+    image: "/projects/GameStore.png",
+    live: "https://game-store-rental-tracker-jzrh.vercel.app/",
+    repo: "https://github.com/zandersantos/game-store-rental-tracker.git"
+  },
+  {
+    title: "ConneXions Mobile App",
+    role: "WIL Placement - ACE Project Space, RRC",
+    description:
+    `
+      Android and iOS social support app for autistic teens and adults, combining anonymous profiles,
+      a chatbot coach for practicing conversations, and a Guardian Angel mentor users can reach in unsafe situations.
+      Contributed to an established React Native (Expo) codebase for a client, building and testing TypeScript features
+      including user and admin registration, multi-step onboarding, and authentication screens from Figma concepts.
+      Overhauled registration and onboarding workflows and updated account settings, account deletion,
+      and dashboard screens with reusable components for consistency and accessibility across devices.
+      Integrated and tested Twilio and Supabase authentication workflows, validating application data, API responses, and onboarding processes for accuracy and reliability.      `,
+    stack: ["React Native", "Expo", "PostgreSQL", "Supabase", "Twilio API", "Figma"],
+    mobileImages: [
+      "/projects/ConnexionsDash.png",
+      "/projects/ConnexionsChat.png",
+      "/projects/ConnexionsPhone.png"
+    ],
+    //live: "",
+    //repo: ""
+  }
+]
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen flex px-10 pt-20">
+    <section id="projects" className="min-h-screen flex px-10 pt-20 pb-20">
       <div className="max-w-screen-2xl mx-auto w-full">
         <div className="space-y-12">
           <SectionLabel>
             Projects
           </SectionLabel>
 
-          <div className="space-y-8">
-            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <Title>
-                  CourtFlow
-                </Title>
-                <RoleBadge>
-                  Personal
-                </RoleBadge>
-              </div>
-
-              <Paragraph>
-                Full-stack NBA season and playoff tracker built with Next.js and PostgreSQL.
-                Designed a relational database using Prisma ORM to manage teams, players, and
-                games while integrating the BallDontLie API for automated data synchronization.
-                Implemented season schedules, playoff series tracking, team standings, live game
-                scoreboards, filtering, pagination, and server-rendered data fetching with
-                responsive user interfaces.
-              </Paragraph>
-
-              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                  Tech Stack
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <TechBadge variant="cyan">
-                    Next.js
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    TypeScript
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    PostgreSQL
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Neon
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Prisma ORM
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Tailwind CSS
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    BallDontLie API
-                  </TechBadge>
+          <div className="space-y-16">
+            {projects.map((p, i) => (
+              <article
+                key={p.title}
+                className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12"
+              >
+                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                  <div className="browser-frame">
+                    <div className ="flex gap-1.5 px-4 py-3 bg-zinc-900 border-b border-cyan-500/20">
+                      <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                    </div>
+                    {p.mobileImages ? (
+                      <div className="relative aspect-[16/10] bg-zinc-950">
+                        <div className="absolute inset-0 flex items-center justify-center gap-4 px-4 py-5">
+                          {p.mobileImages.map((src,n) => (
+                            <Image
+                              key={src}
+                              src={src}
+                              alt={`${p.title}`}
+                              width={390}
+                              height={844}
+                              className="h-full w-auto rounded-xl border border-cyan-500/30"
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ) : p.image ? (
+                      <Image
+                        src={p.image}
+                        alt={`${p.title}`}
+                        width={1600}
+                        height={1000}
+                        className="aspect-[16/10] w-full object-cover"
+                      />
+                    ) : (
+                      <div className="aspect-[16/10] flex items-center justify-center text-sm uppercas tracking-wider text-zinc-500">
+                        Sreenshot N/A
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <Title>
-                  Game Store Rental Tracker
-                </Title>
-                <RoleBadge>
-                  Personal
-                </RoleBadge>
-              </div>
+                <div
+                  key={p.title}
+                  className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+                    <Title>
+                      {p.title}
+                    </Title>
+                    <RoleBadge>
+                      {p.role}
+                    </RoleBadge>
+                  </div>
 
-              <Paragraph>
-                Spec-driven inventory and rental tracking MVP for tabletop game stores.
-                Architected using an end-to-end AI-assisted workflow with Cursor to build
-                server-driven category filtering, real-time inventory status management,
-                and atomic status updates. Designed a relational schema separating active item
-                states from chronological audit logs using Prisma ORM and Supabase PostgreSQL.
-              </Paragraph>
+                  <Paragraph>
+                    {p.description}
+                  </Paragraph>
 
-              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                  Tech Stack
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <TechBadge variant="cyan">
-                    Next.js
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    TypeScript
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    PostgreSQL
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Supabase
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Prisma ORM
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Tailwind CSS
-                  </TechBadge>
-                  <TechBadge variant="cyan">
-                    Cursor AI
-                  </TechBadge>
+                  <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
+                    <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
+                      Tech Stack
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {p.stack.map((tech) => (
+                        <TechBadge key={tech} variant="cyan">
+                          {tech}
+                        </TechBadge>
+                      ))}
+                    </div>
+                  </div>
+                  {(p.live || p.repo) && (
+                    <div className="flex flex-wrap gap-3 pt-6">
+                      {p.live && (
+                        <ProjectLink href={p.live} variant="solid">
+                          Live Demo
+                        </ProjectLink>
+                      )}
+                      {p.repo && (
+                        <ProjectLink href={p.repo} variant="outline">
+                          GitHub
+                        </ProjectLink>
+                      )}
+                    </div>
+                  )}
                 </div>
-              </div>
-            </div>
-            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <Title>
-                  ConneXions Mobile App
-                </Title>
-                <RoleBadge>
-                  Professional - ACE Project Space
-                </RoleBadge>
-              </div>
-
-              <Paragraph>
-                Community safety mobile application with a guardian-protected user system for at-risk populations.
-                Architected complete user onboarding flows for both standard users and &quot;Admins&quot;,
-                implementing Twilio OTP verification, real-time in-app notifications via Supabase,
-                and secure authentication workflows. Built comprehensive user settings including
-                password management, profile updates, and account deletion with multi-factor verification.
-              </Paragraph>
-
-              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                <h4 className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                  Tech Stack
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  <TechBadge variant = "cyan">
-                    React Native
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    Supabase
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    PostgreSQL
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    Twilio API
-                  </TechBadge>
-                </div>
-              </div>
-            </div>
-
-            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <Title>
-                  Evolve Athletics - Mock E-Commerce Platform
-                </Title>
-                <RoleBadge>
-                  Academic
-                </RoleBadge>
-              </div>
-
-              <Paragraph>
-                Full-stack fitness equipment e-commerce store featuring product catalog with category organization,
-                session-based shopping cart with CRUD operations, and complete checkout flow with user authentication.
-                Built admin dashboard for product management (CRUD), image handling, and dynamic content editing.
-                Implemented RESTful routing, MVC architecture, and relational database design with customers,
-                products, orders, and order details models.
-              </Paragraph>
-
-              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                  Tech Stack
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <TechBadge variant = "cyan">
-                    Ruby on Rails
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    PostgreSQL
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    HTML/CSS
-                  </TechBadge>
-                </div>
-              </div>
-            </div>
-
-            <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                <Title>
-                  D&D Monster Manual
-                </Title>
-                <RoleBadge>
-                  Academic
-                </RoleBadge>
-              </div>
-
-              <Paragraph>
-                Interactive monster database with search functionality for monsters, actions, and senses.
-                Designed complex relational database schema with junction tables for many-to-many relationships
-                between monsters, abilities, and actions. Implemented full-text search across multiple entities,
-                RESTful API integration with D&D 5e API, and data migration workflows between SQLite and SQL Server.
-              </Paragraph>
-
-              <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                  Tech Stack
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <TechBadge variant = "cyan">
-                    Ruby on Rails
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    PostgreSQL
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    HTML/CSS
-                  </TechBadge>
-                  <TechBadge variant = "cyan">
-                    API Integration
-                  </TechBadge>
-                </div>
-              </div>
-            </div>
+               </article>
+             ))}
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-6 shadow-xl">
               <p className="text-lg font-semibold text-cyan-600 pb-2">
                 In Progress
