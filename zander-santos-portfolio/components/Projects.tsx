@@ -52,15 +52,16 @@ const projects: Project[] = [
   },
   {
     title: "ConneXions Mobile App",
-    role: "Professional, Work Integrated Placement - ACE Project Space, Red River College Polytechnic",
+    role: "WIL Placement - ACE Project Space, RRC",
     description:
     `
-      Community safety mobile application with a guardian-protected user system for at-risk populations.
-      Architected complete user onboarding flows for both standard users and administrators,
-      implementing Twilio OTP verification, real-time in-app notifications via Supabase,
-      and secure authentication workflows. Built comprehensive user settings including
-      password management, profile updates, and account deletion with multi-factor verification.
-    `,
+      Android and iOS social support app for autistic teens and adults, combining anonymous profiles,
+      a chatbot coach for practicing conversations, and a Guardian Angel mentor users can reach in unsafe situations.
+      Contributed to an established React Native (Expo) codebase for a client, building and testing TypeScript features
+      including user and admin registration, multi-step onboarding, and authentication screens from Figma concepts.
+      Overhauled registration and onboarding workflows and updated account settings, account deletion,
+      and dashboard screens with reusable components for consistency and accessibility across devices.
+      Integrated and tested Twilio and Supabase authentication workflows, validating application data, API responses, and onboarding processes for accuracy and reliability.      `,
     stack: ["React Native", "Expo", "PostgreSQL", "Supabase", "Twilio API", "Figma"],
     mobileImages: [
       "/projects/ConnexionsDash.png",
