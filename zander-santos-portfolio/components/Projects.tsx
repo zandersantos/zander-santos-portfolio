@@ -15,6 +15,57 @@ type Project = {
   repo?: string;
 }
 
+const projects: Project[] = [
+  {
+    title: "CourtFlow",
+    role: "Personal",
+    description:
+    `
+      Full-stack NBA season and playoff tracker built with Next.js and PostgreSQL.
+      Designed a relational database using Prisma ORM to manage teams, players, and games
+      while integrating the BallDontLie API for automated data synchronization.
+      Implemented season schedules, playoff series tracking, team standings, live game scoreboards,
+      filtering, pagination, and server-rendered data fetching with responsive user interfaces.
+    `,
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "Neon", "Prisma ORM", "Tailwind CSS", "BallDontLie API"],
+    image: "/projects/CourtFlow2.png",
+    live: "https://court-flow-coral.vercel.app/",
+    repo: "https://github.com/zandersantos/court-flow.git"
+  },
+  {
+    title: "Game Store Rental Tracker",
+    role: "Personal",
+    description:
+    `
+      Spec-driven inventory and rental tracking MVP for tabletop game stores.
+      Architected using an end-to-end AI-assisted workflow with Cursor and Claude Code to build
+      server-driven category filtering, real-time inventory status management,
+      and atomic status updates. Designed a relational schema separating active item
+      states from chronological audit logs using Prisma ORM and Supabase PostgreSQL.
+    `,
+    stack: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Prisma ORM", "Tailwind CSS", "Cursor AI", "Claude Code"],
+    image: "",
+    live: "https://game-store-rental-tracker-jzrh.vercel.app/",
+    repo: "https://github.com/zandersantos/game-store-rental-tracker.git"
+  },
+  {
+    title: "ConneXions Mobile App",
+    role: "Professional, Work Integrated Placement - ACE Project Space, Red River College Polytechnic",
+    description:
+    `
+      Community safety mobile application with a guardian-protected user system for at-risk populations.
+      Architected complete user onboarding flows for both standard users and administrators,
+      implementing Twilio OTP verification, real-time in-app notifications via Supabase,
+      and secure authentication workflows. Built comprehensive user settings including
+      password management, profile updates, and account deletion with multi-factor verification.
+    `,
+    stack: ["React Native", "Expo", "PostgreSQL", "Supabase", "Twilio API", "Figma"],
+    image: "",
+    //live: "",
+    //repo: ""
+  }
+]
+
 const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex px-10 pt-20">
