@@ -131,6 +131,28 @@ const Projects = () => {
                       ))}
                     </div>
                   </div>
+
+                  {(p.live || p.repo) && (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary isolate"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+
+                  {p.repo && (
+                    <a
+                      href={p.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary isolate"
+                    >
+                      GitHub
+                    </a>
+                  )}
                 </div>
                </article>
              ))}
