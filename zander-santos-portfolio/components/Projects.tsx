@@ -76,36 +76,61 @@ const Projects = () => {
           </SectionLabel>
 
           <div className="space-y-8">
-            {projects.map((p) => (
-              <div
+            {projects.map((p, i) => (
+              <article
                 key={p.title}
-                className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
-                  <Title>
-                    {p.title}
-                  </Title>
-                  <RoleBadge>
-                    {p.role}
-                  </RoleBadge>
+                className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12"
+              >
+                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                  <div className ="flex gap-1.5 px-4 py-3 bg-zinc-900 border-b border-cyan-500/20">
+                    <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                  </div>
+                  {p.image ? (
+                    <Image
+                      src={p.image}
+                      alt={`${p.title}`}
+                      width={1600}
+                      height={1000}
+                      className="aspect-[16/10] w-full object-cover"
+                    />
+                  ): (
+                    <div className="aspect-[16/10] flex items-center justify-center text-sm uppercas tracking-wider text-zinc-500">
+                      Sreenshot N/A
+                    </div>
+                  )}
                 </div>
+                <div
+                  key={p.title}
+                  className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 shadow-xl">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4 gap-4">
+                    <Title>
+                      {p.title}
+                    </Title>
+                    <RoleBadge>
+                      {p.role}
+                    </RoleBadge>
+                  </div>
 
-                <Paragraph>
-                  {p.description}
-                </Paragraph>
+                  <Paragraph>
+                    {p.description}
+                  </Paragraph>
 
-                <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
-                  <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
-                    Tech Stack
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {p.stack.map((tech) => (
-                      <TechBadge key={tech} variant="cyan">
-                        {tech}
-                      </TechBadge>
-                    ))}
+                  <div className="flex flex-wrap gap-3 items-baseline pt-4 border-t border-cyan-200">
+                    <p className="text-xs uppercase text-gray-500 font-semibold tracking-wider">
+                      Tech Stack
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {p.stack.map((tech) => (
+                        <TechBadge key={tech} variant="cyan">
+                          {tech}
+                        </TechBadge>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+               </article>
              ))}
             <div className="skill-card bg-white/95 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-6 shadow-xl">
               <p className="text-lg font-semibold text-cyan-600 pb-2">
