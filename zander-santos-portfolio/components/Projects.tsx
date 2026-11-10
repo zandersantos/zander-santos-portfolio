@@ -44,7 +44,7 @@ const projects: Project[] = [
       states from chronological audit logs using Prisma ORM and Supabase PostgreSQL.
     `,
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Prisma ORM", "Tailwind CSS", "Cursor AI", "Claude Code"],
-    image: "",
+    image: "/projects/GameStore.png",
     live: "https://game-store-rental-tracker-jzrh.vercel.app/",
     repo: "https://github.com/zandersantos/game-store-rental-tracker.git"
   },
@@ -60,7 +60,7 @@ const projects: Project[] = [
       password management, profile updates, and account deletion with multi-factor verification.
     `,
     stack: ["React Native", "Expo", "PostgreSQL", "Supabase", "Twilio API", "Figma"],
-    image: "",
+    image: "/projects/ConnexionsDash.png",
     //live: "",
     //repo: ""
   }
@@ -75,7 +75,7 @@ const Projects = () => {
             Projects
           </SectionLabel>
 
-          <div className="space-y-8">
+          <div className="space-y-16">
             {projects.map((p, i) => (
               <article
                 key={p.title}
