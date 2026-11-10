@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Paragraph from "./ui/Paragraph";
 import RoleBadge from "./ui/RoleBadge";
 import SectionLabel from "./ui/SectionLabel";
