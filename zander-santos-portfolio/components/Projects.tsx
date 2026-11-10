@@ -5,6 +5,16 @@ import SectionLabel from "./ui/SectionLabel";
 import TechBadge from "./ui/TechBadge";
 import Title from "./ui/Title";
 
+type Project = {
+  title: string;
+  role: string;
+  description: string;
+  stack: string[];
+  image?: string;
+  live?: string;
+  repo?: string;
+}
+
 const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex px-10 pt-20">
