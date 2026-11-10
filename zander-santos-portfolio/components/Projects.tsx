@@ -82,24 +82,26 @@ const Projects = () => {
                 className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12"
               >
                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className ="flex gap-1.5 px-4 py-3 bg-zinc-900 border-b border-cyan-500/20">
-                    <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
-                  </div>
-                  {p.image ? (
-                    <Image
-                      src={p.image}
-                      alt={`${p.title}`}
-                      width={1600}
-                      height={1000}
-                      className="aspect-[16/10] w-full object-cover"
-                    />
-                  ): (
-                    <div className="aspect-[16/10] flex items-center justify-center text-sm uppercas tracking-wider text-zinc-500">
-                      Sreenshot N/A
+                  <div className="browser-frame">
+                    <div className ="flex gap-1.5 px-4 py-3 bg-zinc-900 border-b border-cyan-500/20">
+                      <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
                     </div>
-                  )}
+                    {p.image ? (
+                      <Image
+                        src={p.image}
+                        alt={`${p.title}`}
+                        width={1600}
+                        height={1000}
+                        className="aspect-[16/10] w-full object-cover"
+                      />
+                    ): (
+                      <div className="aspect-[16/10] flex items-center justify-center text-sm uppercas tracking-wider text-zinc-500">
+                        Sreenshot N/A
+                      </div>
+                    )}
+                  </div>
                 </div>
                 <div
                   key={p.title}
