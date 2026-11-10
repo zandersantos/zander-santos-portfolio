@@ -12,6 +12,7 @@ type Project = {
   description: string;
   stack: string[];
   image?: string;
+  mobileImages?: string[];
   live?: string;
   repo?: string;
 }
@@ -29,7 +30,7 @@ const projects: Project[] = [
       filtering, pagination, and server-rendered data fetching with responsive user interfaces.
     `,
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Neon", "Prisma ORM", "Tailwind CSS", "BallDontLie API"],
-    image: "/projects/CourtFlow2.png",
+    image: "/projects/CourtFlowDash.png",
     live: "https://court-flow-coral.vercel.app/",
     repo: "https://github.com/zandersantos/court-flow.git"
   },
@@ -61,7 +62,11 @@ const projects: Project[] = [
       password management, profile updates, and account deletion with multi-factor verification.
     `,
     stack: ["React Native", "Expo", "PostgreSQL", "Supabase", "Twilio API", "Figma"],
-    image: "/projects/ConnexionsDash.png",
+    mobileImages: [
+      "/projects/ConnexionsDash.png",
+      "/projects/ConnexionsChat.png",
+      "/projects/ConnexionsPhone.png"
+    ],
     //live: "",
     //repo: ""
   }
@@ -89,7 +94,22 @@ const Projects = () => {
                       <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
                       <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
                     </div>
-                    {p.image ? (
+                    {p.mobileImages ? (
+                      <div className="relative aspect-[16/10] bg-zinc-950">
+                        <div className="absolute inset-0 flex items-center justify-center gap-4 px-4 py-5">
+                          {p.mobileImages.map((src,n) => (
+                            <Image
+                              key={src}
+                              src={src}
+                              alt={`${p.title}`}
+                              width={390}
+                              height={844}
+                              className="h-full w-auto rounded-xl border border-cyan-500/30"
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    ) : p.image ? (
                       <Image
                         src={p.image}
                         alt={`${p.title}`}
@@ -97,7 +117,7 @@ const Projects = () => {
                         height={1000}
                         className="aspect-[16/10] w-full object-cover"
                       />
-                    ): (
+                    ) : (
                       <div className="aspect-[16/10] flex items-center justify-center text-sm uppercas tracking-wider text-zinc-500">
                         Sreenshot N/A
                       </div>
